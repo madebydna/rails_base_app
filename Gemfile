@@ -23,9 +23,10 @@ gem 'jquery-rails'
 gem 'haml-rails'
 
 group :test do
-  gem 'minitest', '4.0'
-  gem 'capybara'
-  gem 'capybara_minitest_spec'
+  gem 'minitest', '~> 4.0'
+  gem 'capybara', "~> 1.1.1"
+  gem 'capybara_minitest_spec', "~> 0.2.2"
+  gem 'turn'
 end
 
 # To use ActiveModel has_secure_password
