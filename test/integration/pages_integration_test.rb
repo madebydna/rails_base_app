@@ -11,7 +11,9 @@ describe "Pages integration" do
     end
 
     it "should have the right title" do
-      skip "Do this later"
+      visit '/pages/home'
+      page.must_have_selector('title',
+                        :text => "MetaboDB | Home")
     end
   end
 
