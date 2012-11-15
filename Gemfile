@@ -21,6 +21,12 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'devise'
+
+
+#temp for wireframe styling
+#https://github.com/thoughtbot/flutie
+gem 'flutie'
 
 group :test do
   gem 'minitest', '~> 4.0'

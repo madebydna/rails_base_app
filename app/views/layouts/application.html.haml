@@ -5,5 +5,23 @@
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-  %body
-    = yield
+  %body{:id => "#{controller_name}-#{action_name}", :class => "#{controller_name}"}
+    #wrap
+      #header.clearfix
+        #logo
+          = link_to image_tag("placeholder.png"), "#", :id =>"logo"
+        #login
+          - if user_signed_in?
+            = "Logged in as #{current_user.email}" 
+            &nbsp;|&nbsp;
+            = link_to "Logout", destroy_user_session_path, method: :delete 
+          -else
+            = link_to 'Sign up', new_user_registration_path
+            |
+            = link_to 'Log in', new_user_session_path
+      #main
+        = render :partial => "shared/flash", :locals => {:flash => flash}
+        = yield
+      %footer#footer
+        This is the footer
+      = debug(params) if Rails.env.development?

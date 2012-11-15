@@ -7,7 +7,7 @@ describe "Pages integration" do
       visit '/pages/home'
       #page.has_content?('MetaboDB Home').must_equal true
       #or thanks to capybara_minitest_gem we can use rspec style:
-      page.must_have_content('MetaboDB Home')
+      page.must_have_content('MetaboDB')
     end
 
     it "should have the right title" do
