@@ -229,4 +229,10 @@ Devise.setup do |config|
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = "/my_engine/users/auth"
+  
+  # config.rpx_application_name = "metabodb"
+  # RPXNow.api_key = "4027e61f44b5aac4433cf7169a8774d17383c90f"
+
+  config.rpx_application_name = "genegrabber"
+  RPXNow.api_key = "176585677abf354fa6d19c6e6f65f96778665c94"
 end
