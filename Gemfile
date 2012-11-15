@@ -22,7 +22,6 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'devise'
-gem 'devise_rpx_connectable', git: 'git@github.com:madebydna/devise_rpx_connectable.git'
 gem 'declarative_authorization'
 
 
